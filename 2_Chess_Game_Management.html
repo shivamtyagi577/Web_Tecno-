@@ -4,19 +4,44 @@
   <title>Run Chess for Lab02</title>
   <style media="screen">
     body{ }
+    /* .tab {
+     margin-left: 2.5em
+    } */
     h1{
       /* text-align: center; */
       font-family: arial
       }
       p{font-family: garamond;
-        font-size: 112%;
+        font-size: 110%;
       }
+      /* Border,padding, */
+      table, th, td{
+        border: 1px solid black;
+        padding: 10px;
+        /* border-collapse: collapse; */
+        width: 30%;
+      }
+      #t01 tr:nth-child(even) {
+        background-color: #eee;
+      }
+      #t01 tr:nth-child(odd) {
+       background-color: #fff;
+      }
+      #t01 th {
+        background-color: black;
+        color: white;
+      }
+      /* table {
+        border-spacing: 15px;
+      } */
   </style>
 </head>
   <body>
     <img src="https://lh3.googleusercontent.com/proxy/dxSvrL91N96GJfChchcFi8Y2sTjbiYa0Xs185jbt2n4BdiH19WfyhIYfd_NTPT3lbS9puxohgrmk8ldldZHO54Jn" alt="Icon" style="width:80px;height:80px;">
     <h1> Articles</h1>
     <img src="https://images.chesscomfiles.com/uploads/v1/article/25432.5f97f102.668x375o.82762b68ac6a.jpeg" alt="main1">
+    <!--HTML IFRAME -->
+    <iframe style="margin-left:29.5em" src="1.html" height="600" width="600" title="Iframe Example"></iframe>
     <h2>Run Chess Events Online</h2>
     <p title = " ParaGraph1">Currently, chess clubs around the world are closed due to coronavirus, but even in the best of times, clubs often struggle with venue access issues and finding ways for their chess community to connect online.
 
@@ -28,6 +53,7 @@ Chess.com clubs provide tons of features to help you organize communities and ho
       <li><a href="#C3">Invite members.</a></li>
       <li><a href="#C4">Add admins.</a></li>
       <li><a href="#C5">Create news/forums.</a></li>
+      <li><a href="#C6">Display Top 5 Players of this week </a></li>
       <li>Create a daily chess tournament.</li>
       <li>Create a live chess tournament.</li>
       <li>Join a league.</li>
@@ -50,7 +76,12 @@ Finally, if you intend to have a small group of known players participate in you
 
 You can always revisit these settings at a later time.</p>
 
-    <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpZ2FeDJ.png" alt="create your club ">
+    <img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/phpZ2FeDJ.png" alt="create your club " usemap="#workmap">
+    <map name="workmap">
+      <area shape="rect" coords="0,0,270,350" alt="Club Pic" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
 
     <hr>
     <h2 id="C3">3. Invite members.</h2>
@@ -61,9 +92,35 @@ You can always revisit these settings at a later time.</p>
     <p>Need help running the club? Create more super-admins, admins, and coordinators from the members' page. You can learn more about club administrator roles <a href="https://support.chess.com/article/336-what-are-the-different-club-roles" target = "_blank" >here</a>.</p>
     <hr>
     <h2 id="C5">5. Create news/forums.</h2>
+
     <p>The easiest way to communicate with all of your club members is via "News." Simply create a news article using the built-in editor to announce your online and offline events, club updates, and more! Members will be notified via a message on Chess.com.</p>
-
-
+    <hr>
+    <h2 id="C5">6. Display Top 5 Players of this week </h2>
+    <!--CAPTION -->
+    <caption style="text-align: center;">Top 5 Players of this week </caption>
+    <table id="t01">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>121</td>
+        <td>Smith</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>768</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>786</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <hr>
 
 
 

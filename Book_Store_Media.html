@@ -1,117 +1,69 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Amazon Books</title>
+<!<!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio & Video</title>
+  </head>
+  <body>
+    <nav>
+      <a href="4.1.html">HOME</a> |
+      <a href="3.html">LOGIN</a> |
+      <!-- <a href="/js/">JavaScript</a> |
+      <a href="/python/">Python</a> -->
+    </nav>
 
-    </head>
-    <body>
-        <header>
-            <div class="amz-header">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthewordbite.files.wordpress.com%2F2017%2F06%2Fc41.jpg&f=1&nofb=1" alt="" class="amazon">
+    <!-- **************************** -->
+    <strong><p id = "location" style = "position: center"></p></strong>
+    <script src = "location.js"></script>
+    <br><br>
+    <center><img src = "shivam.jpeg"  style="width:200px;height:200px;"></center>
+    <center><strong><p id = "welcome" style = "font-size: 24px">Welcome SHIVAM TYAGI 2047122!</p></strong></center>
+    <br>
+    <center><p style = "font-size:20px">Welcome to Amazon Books, the website to buy-and-sell books at a price which everyone's happy with!</p></center>
+    <center><iframe width="840" height="472.5" src="https://www.youtube.com/embed/DLBxC8uGPu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <center><p>We provide audiobooks in our website, if you would like to check them out, here's a sample of the book <i>The Fault In Our Stars by John Green.</i></p></center>
+    <center><audio controls>
+        <source src="TFIOS-Chapter1.mp3" type="audio/mpeg" preload="auto">
+        Your browser does not support the audio element.
+      </audio></center>
+    <center><p>We sometimes provide video options with the same audio file, as shown below.</p></center>
+    <center><video width="840" height="472.5" controls>
+        <source src="TFIOS-Chapter1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </center>
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About Us</a></li>
+                            <li><a href="https://amazon.jobs/en-gb/">Careers</a></li>
+                            <li><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></li>
+                            <li><a href="https://www.amazon.in/gp/browse.html?node=8872558031&ref_=footer_cares">Amazon Cares</a></li>
+                            <li><a href="https://www.amazon.in/gp/browse.html?node=4594605031&ref_=footer_smile">Gift a Smile</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Connect with Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/AmazonIN">Facebook</a></li>
+                            <li><a href="https://twitter.com/AmazonIN">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/amazondotin/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright text-center py-3">Amazon.Inc © 2021</div>
             </div>
-        </header>
-        <div>
-            <h1 style="text-transform: capitalize; padding: 0; margin: 0 auto;">Welcome to amazon books</h1>
-        </div>
-        <div class="content">
-            <aside>
-
-                <ul>
-                    <li id="adk" href="">Add Books</li>
-                    <li  id ="vbk"onclick="v()">View Books</li>
-                    <li id ="ln" onclick="l()">login</li>
-                </ul>
-
-            </aside>
-            <main>
-                <div class="view-books" style="display: grid;">
-
-                     <div class="bkimg">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/51KSK8Jm95L._SX198_BO1,204,203,200_QL40_FMwebp_.jpg">
-                    </div>
-                    <div class="bkimg">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/51j9meEUKwL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg">
-                    </div>
-                    <div class="bkimg">
-                        <img src="https://m.media-amazon.com/images/I/71K9b50E4YL._AC_UY218_.jpg">
-                    </div>
-                    <div class="bkimg">
-                        <img src="https://images-eu.ssl-images-amazon.com/images/I/518pkFFlFsL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg">
-                    </div>
-                </div>
-                <div class="addbooks"  style="display: none;">
-                    <h1>You can add Books here.</h1>
-                    <form class="form">
-                        <div>
-                            <p>Enter the Title of the Book</p>
-
-                            <label style="text-indent: -1rem;" for="title">Title</label>
-                            <input type="text"  name="title">
-
-                        </div>
-                    <div>
-                        <p style="text-indent: -1rem;">Available on Kindle</p>
-                        <input type="radio">
-                        <label for="kindle">Yes</label>
-                        <input type="radio">
-                        <label for="kindle">No</label>
-                    </div>
-                    <div class="lang">
-                        <p style="text-transform:capitalize;"> Available in  Language</p>
-                        <label>English</label>
-                        <input type="checkbox" name="English">
-                        <label>Hindi</label>
-                        <input type="checkbox" name="Hindi">
-                        <label>Tamil</label>
-                        <input type="checkbox" name="Tamil">
-                        <label>Telagu</label>
-                        <input type="checkbox" name="Telagu">
-                        <label>Kannada</label>
-                        <input type="checkbox" name="Kannada">
-                     </div>
-                     <div>
-                         <p style="text-indent: -1rem; text-transform: capitalize;">Select The Category</p>
-                         <select name="categ">
-                            <option selected>None</option>
-                             <option>Fantasy</option>
-                             <option>Classics</option>
-                             <option>Comics</option>
-                             <option>Horror</option>
-
-                         </select>
-                     </div>
-                     <div>
-                        <p style="text-indent: -1rem; text-transform: capitalize;">Release date</p>
-                        <label for="date">Pick Date</label>
-                        <input type="date" name="reldate">
-                     </div>
-                      <div>
-                          <button class="sb" type="submit">Add</button>
-                      </div>
-                    </form>
-
-                </div>
-                    <div class="login"  style="display: none;">
-
-                        <form class="form">
-                            <div>
-                                <h1>Enter Username And Password</h1>
-
-                                <label  for="Username">Username</label>
-                                <input type="text"  name="Username"><br>
-                                <label  for="Password">Password</label>
-                                <input type="password"  name="Password"><br>
-                                <button  class="sb" type="submit">login</button>
-
-                            </div>
-                         </form>
-                    </div>
+        </footer>
+    </div>
 
 
 
-        </div>
-        </main>
-        <script src="index.js"></script>
-    </body>
+
+
+  </body>
 </html>

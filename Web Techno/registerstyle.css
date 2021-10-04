@@ -1,0 +1,120 @@
+*
+{
+   margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    font-family: sans-serif;
+    background: linear-gradient(to right,#8EC2B8,#26665A); 
+    
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right,#8EC2B8,#26665A);
+    padding: 0 !important;
+    
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 20px;  
+}
+.navbar-nav li
+{
+    padding: 0 10px;   
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 400;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 22px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+    
+}
+/*-------------------------Banner Section------------------------------------------*/
+#banner
+{
+    background-image: linear-gradient(to right,#8EC2B8,#26665A);
+    color: #fff ;
+    padding-top: 5%;
+    
+}
+.ok-btn
+{
+    width: 45px;
+    margin: 20px;
+}
+#banner a
+{
+    color: #fff;
+    text-decoration: none;
+    
+}
+/*------------------------Register section-------------------------------*/
+.form-box
+{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+}
+
+label
+{
+    width: 240px;
+    display: inline-block;
+    
+}
+
+.register h2
+{
+    align-content: center;
+    color: linear-gradient(to right,#8EC2B8,#26665A);
+}
+input[type=submit]
+{
+    top: 200px;
+    border-radius: 20%;
+    background: linear-gradient(to right,#8EC2B8,#26665A);
+    color: white;
+    border: none;
+    box-shadow: 12px;
+    box-sizing: 120px;
+    margin: 4px 2px;
+    width: 120px;
+    height: 50px;
+    
+}
+
+input[type=reset]
+{
+    border-radius: 20%;
+    background: linear-gradient(to right,#8EC2B8,#26665A);
+    color: white;
+    border: none;
+    box-shadow: 12px;
+    box-sizing: 120px;
+    margin: 4px 2px;
+    width: 120px;
+    height: 50px;
+    
+}
